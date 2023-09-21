@@ -1,0 +1,1 @@
+allow vendor_hal_displayfeature_xiaomi_default default_prop:file { read open getattr map };
