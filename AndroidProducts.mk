@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_psyche.mk
+    $(LOCAL_DIR)/aosp_psyche.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_psyche-eng \
-    evolution_psyche-userdebug \
-    evolution_psyche-user
+    aosp_psyche-eng \
+    aosp_psyche-userdebug \
+    aosp_psyche-user

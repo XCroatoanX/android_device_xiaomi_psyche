@@ -1,1 +1,1 @@
-./extract-files.sh -k ~/evox/device/xiaomi/psyche --only-target
+./extract-files.sh -k ~/pe/device/xiaomi/psyche --only-target
