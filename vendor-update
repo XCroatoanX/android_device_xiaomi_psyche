@@ -1,1 +1,1 @@
-./extract-files.sh -k ~/pe/device/xiaomi/psyche --only-target
+./extract-files.sh -k ~/android/pe/device/xiaomi/psyche --only-target

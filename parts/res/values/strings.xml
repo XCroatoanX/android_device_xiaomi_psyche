@@ -69,6 +69,6 @@
 
     <!-- DC dimming settings -->
     <string name="dc_dimming_enable_title">DC Dimming</string>
-    <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
+    <string name="dc_dimming_enable_summary">C Dimming reduces eye strain in low light conditions but may result in reduced image quality and poor color production.</string>
     <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
 </resources>

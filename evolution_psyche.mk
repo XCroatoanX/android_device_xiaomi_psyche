@@ -13,22 +13,26 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from psyche device
 $(call inherit-product, device/xiaomi/psyche/device.mk)
 
-# default configs
+# default device configs
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_HAS_UDFPS := true
+
+# Inherit from Evox features
 TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Gapps
 USE_GAPPS := true
 WITH_GMS := true
 TARGET_GAPPS_ARCH := arm64
-TARGET_ENABLE_BLUR := true
 
 PRODUCT_NAME := aosp_psyche
 PRODUCT_DEVICE := psyche
