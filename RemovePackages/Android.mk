@@ -15,8 +15,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     SnapdragonCamera \
     YouTube \
     YouTubeMusicPrebuilt \
-    Photos \
-    Chrome \
     Chrome-Stub \
     Gallery2 \
     Music \
@@ -25,7 +23,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Recorder \
     Jelly \
     Eleven \
-    WellbeingPrebuilt \
     PlayAutoInstallConfig \
     Aperture
 LOCAL_UNINSTALLABLE_MODULE := true
