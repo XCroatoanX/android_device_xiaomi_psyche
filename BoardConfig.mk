@@ -108,16 +108,16 @@ HWUI_COMPILE_FOR_PERF := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(DEVICE_PATH)/hidl/device_framework_matrix.xml \
-    $(DEVICE_PATH)/hidl/xiaomi_framework_compatibility_matrix.xml \
+    $(DEVICE_PATH)/configs/hidl/device_framework_matrix.xml \
+    $(DEVICE_PATH)/configs/hidl/xiaomi_framework_compatibility_matrix.xml \
     vendor/aosp/config/device_framework_matrix.xml
 
-DEVICE_MATRIX_FILE += $(DEVICE_PATH)/hidl/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/manifest.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hidl/xiaomi_manifest.xml
+DEVICE_MATRIX_FILE += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/xiaomi_manifest.xml
 
 ODM_MANIFEST_SKUS += nfc
-ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/hidl/manifest_nfc.xml
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/hidl/manifest_nfc.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):init_xiaomi_psyche
@@ -276,10 +276,13 @@ CONFIG_IEEE80211AC := true
 CONFIG_IEEE80211AX := true
 
 # Inherit from proprietary files for miuicamera
--include vendor/xiaomi/psyche--miuicamera/products/board.mk
+-include vendor/xiaomi/psyche---miuicamera/products/board.mk
 
 # Inherit from proprietary files for MIUI Apps
 -include vendor/xiaomi/psyche-customization/products/board.mk
+
+# Inherit from proprietary files for MiSettings BoardConfig.mk
+# -include vendor/xiaomi/psyche-misettings/products/board.mk
 
 # Inherit from proprietary files for MiSound
 -include vendor/xiaomi/psyche-misound/BoardConfigMiSound.mk

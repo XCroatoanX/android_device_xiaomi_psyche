@@ -13,7 +13,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Snap \
     Snap2 \
     SnapdragonCamera \
-    YouTube \
     YouTubeMusicPrebuilt \
     Chrome-Stub \
     Gallery2 \

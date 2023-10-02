@@ -68,8 +68,27 @@
          config_defaultPeakRefreshRate will act as the default frame rate. -->
     <integer name="config_defaultRefreshRate">0</integer>
 
-    <string name="config_ntpServer" translatable="false">ntp.ntsc.ac.cn</string>
-    
+    <string name="config_ntpServer" translatable="false">ntp.ntsc.ac.cn</string> 
+
+    <!-- Specifies the maximum burn-in offset displacement from the center. If -1, no maximum value
+         will be used. -->
+    <integer name="config_burnInProtectionMaxRadius">70</integer>
+
+    <!-- Specifies the minimum burn-in offset horizontally. -->
+    <integer name="config_burnInProtectionMinHorizontalOffset">-15</integer>
+
+    <!-- Specifies the maximum burn-in offset horizontally. -->
+    <integer name="config_burnInProtectionMaxHorizontalOffset">15</integer>
+
+    <!-- Specifies the minimum burn-in offset vertically. -->
+    <integer name="config_burnInProtectionMinVerticalOffset">-40</integer>
+
+    <!-- Specifies the maximum burn-in offset vertically. -->
+    <integer name="config_burnInProtectionMaxVerticalOffset">40</integer>
+
+    <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
+    <bool name="config_displayBlanksAfterDoze">true</bool>
+
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
          for higher refresh rates to be automatically used out of the box -->
     <integer name="config_defaultPeakRefreshRate">120</integer>
@@ -572,6 +591,10 @@
 
     <!-- Pocket Lock -->
     <bool name="config_pocketModeSupported">true</bool>
+    <bool name="config_pocketUseLightSensor">true</bool>
+
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">"android.sensor.light"</string>
 
     <!-- Whether devices suports in-display fingerprint when screen is off -->
     <bool name="config_supportsScreenOffUdfps">true</bool>
@@ -635,6 +658,7 @@
     <bool name="config_pinnerHomeApp">true</bool>
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
+
     <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
          supported by the device, but not necessarily appear in config_availableColorModes. The
          regularly selected color mode will be used if this value is negative. -->
@@ -652,10 +676,9 @@
          If a color mode does not have a corresponding color space specified in this array, the
          currently set composition color space will not be modified.-->
     <integer-array name="config_displayCompositionColorModes">
-        <item>0</item> <!-- COLOR_MODE_NATURAL   -->
-        <item>1</item> <!-- COLOR_MODE_BOOSTED   -->
-        <item>2</item> <!-- COLOR_MODE_SATURATED -->
-        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+        <item>0</item>   <!-- COLOR_MODE_NATURAL   -->
+        <item>1</item>   <!-- COLOR_MODE_BOOSTED   -->
+        <item>3</item>   <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
     <integer-array name="config_displayCompositionColorSpaces">
         <item>0</item> <!-- COLOR_MODE_DEFAULT    -->
