@@ -24,17 +24,11 @@
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">92px</dimen>
 
-    <!-- Starting padding for a left-aligned status bar clock -->
-    <dimen name="status_bar_left_clock_starting_padding">6dp</dimen>
-
     <!-- the padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">16dp</dimen>
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">20dp</dimen>
-
-    <!-- End padding for left-aligned status bar clock -->
-    <dimen name="status_bar_left_clock_end_padding">3dp</dimen>
 
     <!-- for 20dp of padding at 2.75px/dp at default density -->
     <dimen name="rounded_corner_content_padding">55px</dimen>
