@@ -278,6 +278,9 @@ CONFIG_IEEE80211AX := true
 # Inherit from proprietary files for miuicamera
 -include vendor/xiaomi/psyche-miuicamera/products/board.mk
 
+# Inherit from proprietary files for MIUI Apps
+-include vendor/xiaomi/psyche-customization/products/board.mk
+
 # Inherit from proprietary files for MiSound
 -include vendor/xiaomi/psyche-misound/BoardConfigMiSound.mk
 
