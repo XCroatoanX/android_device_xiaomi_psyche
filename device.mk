@@ -608,7 +608,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-$(VULKAN_DEQP_LEVEL).xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Inherit MIUI Camera
-$(call inherit-product-if-exists, vendor/xiaomi/psyche-miuicamera/products/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/psyche---miuicamera/products/miuicamera.mk)
 
 # Inherit MIUI Apps
 $(call inherit-product-if-exists, vendor/xiaomi/psyche-customization/products/apps.mk)
