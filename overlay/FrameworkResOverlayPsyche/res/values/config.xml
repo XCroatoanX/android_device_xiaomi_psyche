@@ -652,8 +652,6 @@
         <item>420</item>
     </array>
 
-      <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -33 V 87 H 33 V 0 H 0 Z</string>
-
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
