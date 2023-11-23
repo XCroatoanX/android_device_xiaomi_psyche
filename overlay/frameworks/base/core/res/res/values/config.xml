@@ -489,7 +489,7 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -33 V 87 H 33 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M -33 52 a 33 33 0 1 0 66 0 a 33 33 0 1 0 -66 0 Z</string>
 
     <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
          one single bounding rect per device edge to the app via
@@ -729,5 +729,6 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -33 V 87 H 33 V 0 H 0 Z</string>
     
 </resources>
