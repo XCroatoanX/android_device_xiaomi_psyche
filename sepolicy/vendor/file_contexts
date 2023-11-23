@@ -27,7 +27,10 @@
 /sys/devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply/bms/fastcharge_mode(/.*)?                            u:object_r:sysfs_battery_supply:s0
 
 # Data Audio Access Directories
-/data/vendor/cit(/.*)?                                                  u:object_r:vendor_audio_data_file:s0
+/data/vendor/cit(/.*)?     
+
+# Data files
+/data/vendor/dolby(/.*)?                    u:object_r:vendor_data_file:s0
 
 # Touch Sampling
 /sys/devices/virtual/touch/touch_dev/bump_sample_rate                    u:object_r:sysfs_htsr:s0
@@ -87,6 +90,9 @@
 
 # FPS Info
 /sys/class/drm/sde-crtc-0/measured_fps                               u:object_r:vendor_sysfs_graphics:s0
+
+# HALs
+/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                   u:object_r:hal_dms_default_exec:s0
 
 # Hexagon DSP-side executable needed for Halide operation
 # This is labeled as public_adsprpcd_file as it needs to be read by apps
