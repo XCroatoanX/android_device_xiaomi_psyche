@@ -27,7 +27,7 @@
 /sys/devices/platform/soc/884000.i2c/i2c-4/4-0055/power_supply/bms/fastcharge_mode(/.*)?                            u:object_r:sysfs_battery_supply:s0
 
 # Data Audio Access Directories
-/data/vendor/cit(/.*)?     
+/data/vendor/cit(/.*)?                    u:object_r:vendor_data_file:s0    
 
 # Data files
 /data/vendor/dolby(/.*)?                    u:object_r:vendor_data_file:s0
